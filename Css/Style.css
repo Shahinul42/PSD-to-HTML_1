@@ -1,0 +1,741 @@
+/* ============= IMPORT FONT ================ */
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;600;700&display=swap');
+
+/* ============= BASIC SETUP ================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    outline: 0;
+}
+
+html {
+    /* scroll-behavior: smooth; */
+    font-size: 62.5%;
+}
+
+img {
+    height: 10rem;
+    width: auto;
+}
+
+p {
+    font-size: 1.6rem;
+    font-weight: 300;
+    text-transform: capitalize;
+    /* letter-spacing: .1rem; */
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+}
+
+h3 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    display: inline-flex;
+    /*! margin-top: -10rem; */
+}
+
+.btn {
+    background-color: #E6794F;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 1rem 5rem;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.Container {
+    width: 114rem;
+    max-width: 95%;
+    margin: auto;
+}
+
+body {
+    font-family: 'Titillium Web', sans-serif;
+    overflow-x: hidden;
+}
+
+/* ============= HEADER ARYA ================ */
+.Header_arya {
+    background: linear-gradient(rgba(137, 91, 154, 0.953), rgba(139, 91, 156, 0.878)), url(Image/1_img.jpg);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.Header {
+    min-height: 85vh;
+    text-align: center;
+    position: relative;
+}
+
+.Header_arya .Hembargar {
+    display: none;
+}
+
+.Header .Nav {
+    padding: 2rem 1rem;
+    transition: all .3s ease-in-out;
+}
+
+.Header .Sticky_nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: .5rem 0;
+    width: 100%;
+    background: rgba(139, 91, 156, 0.91);
+    box-shadow: 0px .5rem .9rem #fff;
+    z-index: 4;
+}
+
+.Header .Nav .Container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.Header .Nav img {
+    height: 4rem;
+    width: auto;
+}
+
+.Header .Nav .List_items ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.Header .Nav ul li {
+    margin-left: 2rem;
+    transition: .5s;
+}
+
+.Header .Nav ul li:nth-child(1) {
+    margin-left: 0px;
+}
+
+.Header .Nav ul li a:link,
+.Header .Nav ul li a:visited {
+    display: inline-block;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    letter-spacing: .15rem;
+    font-weight: 300;
+    transition: all .5s ease-in-out;
+}
+
+.Header .Nav ul li a:hover:link,
+.Header .Nav ul li a:hover:visited,
+.Header .Nav ul li a.Active {
+    background-color: #623A78;
+}
+
+.Header .Content {
+    color: #fff;
+    position: absolute;
+    top:50%;
+    left:50%;
+    width: 100%;
+    transform:translate(-50%,-50%);
+    z-index: 1;
+    -webkit-transform:translate(-50%,-50%);
+    -moz-transform:translate(-50%,-50%);
+    -ms-transform:translate(-50%,-50%);
+    -o-transform:translate(-50%,-50%);
+}
+
+.Header .Content h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    padding: 0 1rem;
+    text-transform: capitalize;
+}
+
+.Header .Content .btn {
+    margin-top: 2rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 2rem;
+    border-radius: .5rem;
+    border-bottom: .5rem solid #C46744;
+    transition: all .5s ease-in-out;
+}
+
+.Header .Content .btn:hover {
+    background: #cc5f3e;
+    border-bottom: .5rem solid #a34b2b;
+}
+
+/* ============= SERVICE ARYA ================ */
+.Service_arya {
+    background: linear-gradient(rgba(74, 200, 173, 0.925), rgba(76, 200, 173, 0.91)), url("Image/service_image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    background-attachment: fixed;
+}
+
+.Service {
+    text-align: center;
+}
+
+.Service_arya h1 {
+    color: #fff;
+    font-size: 4rem;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 7rem;
+}
+
+.Service_arya h1::after {
+    content: "";
+    width: 15rem;
+    height: .5rem;
+    border-radius: .5rem;
+    background-color: #2FA68C;
+    display: block;
+    margin: 1.5rem auto 3rem auto;
+}
+
+.Service_arya p {
+    color: #fff;
+    width: 75%;
+    margin: auto;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.Services {
+    display: flex;
+    margin-top: 10rem;
+    padding-bottom: 5rem;
+}
+
+.Service_item {
+    max-width: 25%;
+    padding:0 2.5rem;
+    text-align: center;
+    /* border:.5rem solid #000; */
+}
+
+.Service_item img {
+    height: 10rem;
+    width: auto;
+}
+
+.Service_item h2 {
+    color: #fff;
+    font-weight: 700;
+    margin-top: 2rem;
+    letter-spacing: .1rem;
+    font-size: 2.5rem;
+}
+
+.Service_item p {
+    width: 100%;
+    margin-top: 1rem;
+    font-size: 1.6rem;
+}
+
+/* ============= TEAM ARYA ================ */
+.Team_arya {
+    background: linear-gradient(rgba(231, 240, 246, 0.918), rgba(231, 240, 246, 0.937)), url(Image/1_img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    padding-bottom: 10rem;
+}
+
+.Team {
+    text-align: center;
+}
+
+.Team_arya h1 {
+    color: #3D4760;
+    font-size: 4rem;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 7rem;
+}
+
+.Team_arya h1::after {
+    content: "";
+    width: 15rem;
+    height: .5rem;
+    border-radius: .5rem;
+    background-color: #C9D9E5;
+    display: block;
+    margin: 1.5rem auto 1rem auto;
+}
+
+.Teams {
+    margin-top: 8rem;
+    display: flex;
+    /* align-items: center; */
+}
+
+.Member {
+    max-width: 25%;
+    text-align: center;
+    padding: 0rem 2rem;
+}
+
+.Team_arya img {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 100%;
+}
+
+.Team_arya h2 {
+    color: #3D4760;
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    line-height: 5rem;
+}
+
+.Team_arya h3 {
+    color: #2c78ea;
+    font-size: 1.4rem;
+    /*! margin-top: -1rem; */
+    transform: translateY(-1rem);
+}
+
+.Team_arya p {
+    margin-top: 0;
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    padding: 1rem 0;
+}
+
+.Team_arya span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 4rem;
+    width: 4rem;
+    margin-top: 1rem;
+    margin-left: .7rem;
+    font-size: 1.8rem;
+    /* padding: 1rem; */
+    border-radius: 100%;
+    color: #fff;
+    background-color: #c3c8ca;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.Team_arya span:hover {
+    background-color: #393939;
+    transform: rotate(360deg);
+}
+
+/* ============= SKILL ARYA ================ */
+.Skill_arya {
+    text-align: center;
+    max-width: 100%;
+    background: linear-gradient(rgba(253, 253, 253, 0.945), rgba(253, 253, 253, 0.945)), url(Image/service_image.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5rem 0;
+}
+
+.Skill_arya h1 {
+    font-size: 4rem;
+    color: #3D4760;
+}
+
+.Skill_arya h1::after {
+    content: "";
+    width: 15rem;
+    height: .5rem;
+    border-radius: .5rem;
+    background-color: #C9D9E5;
+    display: block;
+    margin: 1.5rem auto 3rem auto;
+}
+
+.Skill_arya p {
+    max-width: 80rem;
+    margin: auto;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 4rem;
+}
+
+.Amimated_circles {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 5rem;
+}
+
+.Amimated_circles span {
+    width: 25%;
+    display: inline-block;
+}
+
+svg.radial-progress {
+    height: auto;
+    max-width: 20rem;
+    padding: 1rem;
+    transform: rotate(-90deg);
+    width: 100%;
+    user-select: none;
+}
+
+svg.radial-progress circle {
+    fill: rgba(0, 0, 0, 0);
+    stroke: rgb(255, 255, 255);
+    stroke-dashoffset: 219.91148575129;
+    stroke-width: 5;
+}
+
+svg.radial-progress circle.incomplete {
+    opacity: .25;
+}
+
+svg.radial-progress circle.complete {
+    stroke-dasharray: 219.91148575129;
+}
+
+svg.radial-progress text {
+    fill: #3D4760;
+    text-anchor: middle;
+    font-size: 2.5rem;
+}
+
+.Animated_circle_1 svg.radial-progress circle {
+    stroke: #4CBFE6;
+}
+
+.Animated_circle_2 svg.radial-progress circle {
+    stroke: #D24080;
+}
+
+.Animated_circle_3 svg.radial-progress circle {
+    stroke: #38C8A8;
+}
+
+.Animated_circle_4 svg.radial-progress circle {
+    stroke: #E6794F;
+}
+
+/* ============= PORTFOLIO ARYA ================ */
+.Portfolio_arya {
+    background: linear-gradient(rgba(253, 224, 165, 0.945), rgba(253, 224, 165, 0.945)), url("Image/Team_ariya.jpg");
+    width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    text-align: center;
+    padding: 8rem 0;
+}
+
+.Portfolio_arya h1 {
+    color: #3D4777;
+}
+
+.Portfolio_arya h1::after {
+    content: "";
+    width: 15rem;
+    height: .5rem;
+    border-radius: .5rem;
+    background-color: #E3C282;
+    display: block;
+    margin: 3rem auto;
+}
+
+.Portfolio_arya p {
+    color: #000;
+    font-weight: 500;
+    line-height: 4rem;
+    font-size: 1.8rem;
+}
+
+.Portfolio_arya .Btn_section {
+    width: 100%;
+    max-width: 50%;
+    margin:2rem auto 0rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* .none{
+    display:none;
+} */
+
+.Portfolio_arya .Btn_section .Btn {
+    padding: .5rem 2.5rem;
+    background-color: #E9C888;
+    border-radius: .8rem;
+    cursor: pointer;
+    user-select: none;
+    margin: 1rem;
+    transition: all .3s ease-in-out;
+}
+
+.Portfolio_arya .Btn_section .Btn:hover {
+    box-shadow: inset .1rem .3rem .8rem rgba(43, 43, 43, 0.904);
+}
+
+.Portfolio_arya .Img_section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.Portfolio_arya .Img_section .Section {
+    width: 50%;
+    padding: 3rem;
+}
+
+.Portfolio_arya .container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+
+.Portfolio_arya .mix img {
+    width: 20rem;
+    height: 20rem;
+
+}
+
+.Portfolio_arya .Img_section .Section h3 {
+    padding: 2rem 0;
+}
+
+.Portfolio_arya .Img_section .Section img {
+    width: 100%;
+    height: auto;
+}
+
+/* ============= TESTIMONIAL ARYA ================ */
+.Testimonial_arya {
+    background: linear-gradient(rgba(211, 79, 136, 0.882), rgba(211, 79, 136, 0.898)), url("image/1_img.jpg") no-repeat;
+    width: 100%;
+
+    background-attachment: fixed;
+    background-position: bottom center;
+    background-size: cover;
+    text-align: center;
+    padding: 10rem 0;
+    color: #fff;
+
+}
+
+.Testimonial_arya h1::after {
+    content: "";
+    width: 15rem;
+    height: .5rem;
+    border-radius: .5rem;
+    background-color: #C9D9E5;
+    display: block;
+    margin: 2rem auto;
+}
+
+.Testimonial_arya h2 {
+    font-weight: 300;
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+
+.Testimonial_arya .cols {
+    margin-top: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.Testimonial_arya .cols {
+    margin-bottom: -9rem;
+    margin-top: 8rem;
+}
+
+.Testimonial_arya .cols .col {
+    padding: 2rem;
+    margin-bottom: 3rem;
+    display: flex;
+    max-width: 49%;
+    justify-content: space-between;
+}
+
+.Testimonial_arya .cols .col img {
+    border-radius: 50%;
+    margin-right: 3rem;
+}
+
+.Testimonial_arya .cols .col .Text {
+    text-align: left;
+}
+
+.Testimonial_arya .cols .col h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.Testimonial_arya .cols .col h2 span {
+    font-size: 2.6rem;
+    font-weight: 600;
+}
+
+.Testimonial_arya .cols .col h3 span {
+    display: block;
+    /*! margin-top: -10.5rem; */
+    font-size: 1.6rem;
+    color: #FDDC9C;
+    font-weight: 500;
+    display: flex;
+    transform: translateY(-2.2rem);
+}
+
+/* ============= CONTACT ARYA ================ */
+.Contact_arya {
+    background: #4B5C93;
+    padding: 8rem 0;
+    text-align: center;
+    width: 100%;
+}
+
+.Contact_arya h1 {
+    color: #fff;
+}
+
+.Contact_arya h1::after {
+    content: "";
+    width: 15rem;
+    height: .5rem;
+    border-radius: .5rem;
+    background-color: #293B70;
+    display: block;
+    margin: 2rem auto;
+}
+
+.Contact_arya p {
+    color: #fff;
+    margin: 0 15%;
+    font-size: 2.1rem;
+    font-weight: 500;
+    letter-spacing: .1rem;
+}
+
+.Contact_arya form {
+    display: block;
+    margin: 7rem 15%;
+    margin-bottom: 0rem;
+}
+
+.Contact_arya form input[type="text"],
+.Contact_arya form input[type="email"],
+.Contact_arya form textarea {
+    background: #3c5499;
+    color: #fff;
+    padding: 1.5rem;
+    font-size: 2rem;
+    border: none;
+    border-radius: .5rem;
+}
+
+.Contact_arya form input::placeholder,
+.Contact_arya form textarea::placeholder {
+    opacity: 1;
+    color: #fff;
+}
+
+.Contact_arya .Identity {
+    width: 100%;
+    margin: 1.5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.Contact_arya .Identity input {
+    width: 48%;
+}
+
+.Contact_arya textarea {
+    width: 100%;
+}
+
+.Contact_arya .btn {
+    margin: 6rem 0;
+    background: #30bae7;
+    color: #fff;
+    padding: 1.5rem 6rem;
+    border: 0;
+    border-bottom: .3rem solid #299ec5;
+    letter-spacing: .1rem;
+    font-size: 2.2rem;
+    border-radius: .5rem;
+}
+
+/* ============= FOOTER ARYA ================ */
+.Footer_arya {
+    background: #364C8C;
+    width: 100%;
+}
+
+.Footer_arya ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 2rem 9rem;
+}
+
+
+.Footer_arya ul a:link,
+.Footer_arya ul a:visited {
+    color: #fff;
+    font-size: 2rem;
+    text-transform: capitalize;
+    transition: all .3s ease;
+}
+
+.Footer_arya ul a:hover:link,
+.Footer_arya ul a:hover:visited,
+.Footer_arya ul a.Active {
+    color: #44BCE5;
+}
+
+/* ============= FOOTER ARYA ================ */

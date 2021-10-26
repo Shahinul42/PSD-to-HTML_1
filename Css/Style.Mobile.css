@@ -1,0 +1,234 @@
+@media only screen and (max-width: 1040px) {
+    html {
+        font-size: 60%;
+    }
+
+    .Brand {
+        z-index: 5;
+    }
+
+    .Header_arya .Hembargar {
+        height: 3.2rem;
+        width: 3.8rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        cursor: pointer;
+        position: absolute;
+        right: 3rem;
+        z-index: 2;
+    }
+
+    .Header_arya .Hembargar span {
+        display: inline-block;
+        height: .4rem;
+        width: 100%;
+        background-color: #fff;
+        border-radius: .3rem;
+        transform-origin: left;
+        transition: all .3s ease-in-out;
+    }
+
+
+    .Header .Nav .List_items ul {
+        display: flex;
+        justify-content: unset;
+        flex-direction: column;
+        padding-top: 5rem;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.863);
+        z-index: 2;
+        visibility: hidden;
+        opacity: 0;
+        transition: all .3s ease-in-out;
+    }
+
+    .Header .Nav .List_items ul.Mobile_nav {
+        visibility: visible;
+        opacity: 1;
+
+    }
+
+    .Header .Nav .List_items ul.Mobile_nav li {
+        margin-bottom: 3.5rem;
+    }
+
+    .Header .Nav ul li a:link,
+    .Header .Nav ul li a:visited {
+        font-size: 3rem;
+        font-weight: 100;
+    }
+
+    .Header .Nav ul li a:hover:link,
+    .Header .Nav ul li a:hover:visited,
+    .Header .Nav ul li a.Active {
+        background-color: transparent;
+        color: #ab5bd6;
+    }
+
+
+    .Teams {
+        margin-top: 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 5rem;
+    }
+
+    .Member {
+        max-width: 50%;
+        text-align: center;
+        /* display: inline-block; */
+        margin-top: 2rem;
+        padding:0 5rem;
+    }
+
+    .Services {
+        margin-top: 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 5rem;
+    }
+
+    .Service_item {
+        max-width: 50%;
+        text-align: center;
+        /* display: inline-block; */
+        margin-top: 2rem;
+        padding:0 5rem;
+
+    }
+
+    .Amimated_circles span {
+        width: 50%;
+        margin: 5rem 0rem;
+    }
+
+    .Amimated_circles {
+        max-width: 80%;
+        margin:0 auto;
+}
+    
+    .Testimonial_arya .cols .col {
+        flex-direction: column;
+    }
+
+    .Testimonial_arya .cols .col .Text {
+        text-align: center;
+        margin-top: 3rem;
+    }
+
+    .Contact_arya form {
+        margin: 7rem 5%;
+    }
+
+    .Footer_arya ul li {
+        margin: 1rem;
+    }
+
+}
+
+
+
+
+@media only screen and (max-width: 480px) {
+    html {
+        font-size: 50%;
+    }
+    .Container {
+        width: 100%;
+    }
+
+    .Header .Content {
+        color: #fff;
+        position: absolute;
+        bottom: 10vh;
+        z-index: 1;
+    }
+
+    .Service_item {
+        margin-top: 9rem;
+    }
+
+    .Teams {
+        margin-top: 1rem;
+        display: block;
+    }
+
+    .Member {
+        max-width: 100%;
+        text-align: center;
+        display: inline-block;
+    }
+
+    .Services {
+        margin-top: 1rem;
+        display: block;
+    }
+
+    .Service_item {
+        max-width: 100%;
+        text-align: center;
+        display: inline-block;
+    }
+
+    .Amimated_circles span {
+        width: 100%;
+        margin: 3rem 0rem;
+    }
+
+    svg.radial-progress {
+        max-width: 30rem;
+    }
+
+    .Portfolio_arya .Btn_section {
+        max-width: 100%;
+    }
+    .Portfolio_arya .Btn_section .Btn {
+        width: 40%;
+    }
+
+    .Portfolio_arya .Btn_section .Btn:hover {
+        box-shadow: inset .1rem .3rem .8rem rgba(43, 43, 43, 0.904);
+        background-color: #fff;
+    }
+    
+
+    .Portfolio_arya .Img_section .Section {
+    width: 100%;
+    }
+
+    .Testimonial_arya .cols .col {
+        max-width: 100%;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+
+    .Testimonial_arya .cols .col img {
+        width: 20rem;
+        height: auto;
+    }
+
+    .Contact_arya {
+        background: #4B5C93;
+        padding: 2rem 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .Contact_arya form {
+        margin: 0rem 5%;
+    }
+
+    .Contact_arya p {
+        margin: 0 2%;
+    }
+
+    .Contact_arya .Identity input {
+        width: 100%;
+        margin-top: 2rem;
+    }
+}
